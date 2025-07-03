@@ -11,7 +11,7 @@ export default function App() {
       return (
         <section className="details">
           <h2>Episode Details</h2>
-          <p>Select a puppy to learn more.</p>
+          <p>Select an episode to learn more.</p>
         </section>
       );
     }
