@@ -6,6 +6,9 @@
 
 body {
   padding: 1rem;
+  background-color: black;
+  color: aliceblue;
+  font-family: sans-serif;
 }
 
 main {
@@ -27,16 +30,41 @@ main {
   padding: 0.25rem;
 }
 
+.watchButton {
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
 .roster li {
   padding: 1ch;
-  border: 1px solid #ccc;
+  border-bottom: 0.2px solid #313131;
 }
 
 .roster li:hover {
   cursor: pointer;
-  font-style: italic;
+  /* font-style: italic; */
+  background-color: #4f4f4f;
 }
 
 .details {
-  padding: 0.25rem;
+  padding: 1rem;
+}
+
+.details p {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+}
+.details h2 {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.details h1 {
+  font-size: 2rem;
 }

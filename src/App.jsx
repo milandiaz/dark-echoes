@@ -10,7 +10,7 @@ export default function App() {
     if (!selectedEpisode) {
       return (
         <section className="details">
-          <h2>Epsiode Details</h2>
+          <h2>Episode Details</h2>
           <p>Select a puppy to learn more.</p>
         </section>
       );
@@ -18,8 +18,10 @@ export default function App() {
 
     return (
       <section className="details">
+        <h1>Episode {selectedEpisode.id}</h1>
         <h2>{selectedEpisode.title}</h2>
         <p>{selectedEpisode.description}</p>
+        <button className="watchButton">Watch now</button>
       </section>
     );
   }
@@ -28,7 +30,7 @@ export default function App() {
   function Roster() {
     return (
       <section className="roster">
-        <h2>Roster</h2>
+        <h2>Episodes</h2>
         <ul className="roster">
           {episodes.map((episode) => (
             <li key={episode.id} onClick={() => setSelectedEpisode(episode)}>
@@ -43,7 +45,7 @@ export default function App() {
   return (
     <>
       <header>
-        <h1>Puppy Pals</h1>
+        <h1>Dark echoes</h1>
       </header>
       <main>
         <Roster />
